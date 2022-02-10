@@ -1,5 +1,6 @@
 .dflex{
     display: flex;
+    flex-direction: column;
 }
 img{
     height: 20vh;
@@ -21,4 +22,9 @@ article{
     border: 2px solid black;
     width: 30%;
     /* height: 20vh; */
+}
+
+header{
+    background-color:aqua ;
+    display: flex;
 }
