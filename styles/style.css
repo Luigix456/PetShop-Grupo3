@@ -1,0 +1,24 @@
+.dflex{
+    display: flex;
+}
+img{
+    height: 20vh;
+    width: 33vw;
+    object-fit: scale-down;
+}
+span{
+    color: red;
+}
+section{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border: 2px solid black;
+    width: 30%;
+    /* height: 20vh; */
+}
