@@ -12,6 +12,7 @@ img{
 }
 span{
     color: red;
+    background: blue;
 }
 section{
     display: flex;
