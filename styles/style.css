@@ -2,8 +2,26 @@
     margin: 0;
     padding: 0;
 }
+header{
+    background-color: red;
+    width: 100vw;
+    height: 20vh;
+}
+main{
+    background-color: yellowgreen;
+    min-height: 70vh;
+    width: 100vw;
+}
+footer{
+    background-color: yellow;
+    height: 10vh;
+    width: 100vw;
+}
 .dflex{
     display: flex;
+    flex-direction: column;
+}
+.column{
     flex-direction: column;
 }
 img{
