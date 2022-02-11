@@ -7,6 +7,7 @@ async function getData(){
     .then(json => productos.push(...json.response))
     tipo = [... new Set(productos.map((o) => o.tipo))];
     console.log(productos);
+    console.log(productos[0].nombre);
     console.log(tipo);
     DisplayProducts(productos);
 }
@@ -38,4 +39,15 @@ function DisplayProducts(productos){
     })
     console.log(toDisplay);
     document.querySelector('#farmacia').innerHTML = cards;
+}
+
+
+//Funcion search
+document.getElementById("input-text").addEventListener("keyup", inputSearch)
+
+function inputSearch(evento){
+    let val = evento.target.value
+    console.log(val)
+    let productosFiltrados = productos.filter(producto =>producto.nombre.toLowerCase().includes(val.toLowerCase()) && producto.tipo == 'Medicamento')
+    DisplayProducts(productosFiltrados)
 }

@@ -39,3 +39,12 @@ function DisplayProducts(productos){
     console.log(toDisplay);
     document.querySelector('#jugueteria').innerHTML = cards;
 }
+
+document.getElementById("input-text").addEventListener("keyup", inputSearch)
+
+function inputSearch(evento){
+    let val = evento.target.value
+    console.log(val)
+    let productosFiltrados = productos.filter(producto =>producto.nombre.toLowerCase().includes(val.toLowerCase()) && producto.tipo == 'Juguete')
+    DisplayProducts(productosFiltrados)
+}
