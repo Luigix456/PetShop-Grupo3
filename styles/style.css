@@ -16,10 +16,21 @@ header{
 .column{
     flex-direction: column;
 }
+
+h2{
+    display: inline;
+}
+form{
+    width: 400px;
+    justify-content: center;
+}
+
+
 .logo {
     width: 100px;
     height: 100px;
     margin-right: 1em;
+
 }
 
 span{

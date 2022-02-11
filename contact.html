@@ -8,15 +8,27 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body class="dflex column">
-    <header>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./farmacia.html">Farmacia</a>
-            <a href="./jugueteria.html">Jugueteria</a>
-            <a id="current" href="./contact.html">Contactenos</a>
-        </nav>
-    </header>
-    <main></main>
-    <footer></footer>
+    <main class="dflex column">
+        <h2>Dejanos tu consulta o comentario:</h2>
+        <form class="dflex column" action="">
+            <label for="name">Nombre:</label>
+            <input id="name" name="firstName" type="text" required>
+            <label for="last">Apellido:</label>
+            <input id="last" name="lastName" type="text">
+            <label for="handy">Telefono:</label>
+            <input id="handy" name="phone" type="tel" required>
+            <label for="pet">Tipo de mascota:</label>
+            <select name="mascota" id="pet" required != "0">
+                <option value="0">Seleccione mascota</option>
+                <option value="dog">Perro</option>
+                <option value="cat">Gato</option>
+                <option value="other">Otro</option>
+            </select>
+            <label for="comentarios">Consulta o comentarios:</label>
+            <textarea name="comments" id="comentarios" cols="30" rows="10"></textarea>
+            <input id="btnSubmit" type="submit">
+        </form>
+    </main>
+    <script src="./js/contact.js"></script>
 </body>
 </html>
