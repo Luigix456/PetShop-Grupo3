@@ -15,16 +15,54 @@ section{
     width: 100%;
     flex-wrap: wrap;
 }
-article{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    border: 2px solid black;
-    width: 30%;
-    /* height: 20vh; */
-}
 
 header{
     background-color:aqua ;
     display: flex;
 }
+
+
+/* ESTILO DE TARJETAS. NO BORRAR.  */
+
+.imgCartas{
+    height: 200px;
+    width: 200px;
+}
+
+.card-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    width: 260px;
+    height: 400px;
+    margin: 2rem 4rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 2em #0000004f;
+    border: #fdff71 0.2em solid;
+    transition: ease 0.5s;
+}
+.card-productos:hover {
+    transform: scale(1.02);
+   }
+
+.contenedor-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nombre-producto{
+    text-align: center;
+    margin: 0 1.5rem;
+}
+/* FIN DE ESTILO DE TARJETAS. NO BORRAR */
