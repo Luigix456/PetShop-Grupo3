@@ -2,8 +2,28 @@
     margin: 0;
     padding: 0;
 }
+header{
+    background-color: red;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+}
+main{
+    background-color: yellowgreen;
+    min-height: 70vh;
+    width: 100vw;
+}
+footer{
+    background-color: yellow;
+    height: 10vh;
+    width: 100vw;
+}
 .dflex{
     display: flex;
+    flex-direction: column;
+}
+.column{
+    flex-direction: column;
 }
 img{
     height: 20vh;
@@ -12,6 +32,7 @@ img{
 }
 span{
     color: red;
+    background: blue;
 }
 section{
     display: flex;
@@ -26,7 +47,6 @@ article{
     width: 30%;
     /* height: 20vh; */
 }
-
 /* index main */
 .main{
     display: flex;
@@ -39,3 +59,4 @@ article{
 .parrafoIndex{
     width: 30vw;
 }
+
