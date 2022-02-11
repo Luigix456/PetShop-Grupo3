@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+nav {
+    font-family: 'Fredoka One', cursive;
+}
 .dflex{
     display: flex;
 }
+
 .logo {
     width: 100px;
     height: 100px;
-    margin-right: 1em;
 }
-
+.text-logo {
+    margin-right: 2em;
+    transition: all .2s 0s ease;
+}
+.text-logo:hover {
+    transform: scale(1.1,1.1);
+}
+li a {
+    margin-right: 3em;
+}
 span{
     color: red;
 }
@@ -23,11 +37,6 @@ article{
     width: 30%;
     /* height: 20vh; */
 }
-.btn-outline-success {
-    color: #ffffff !important;
-    border-color: #ffffff !important;
-}
-
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
