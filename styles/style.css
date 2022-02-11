@@ -1,11 +1,12 @@
 .dflex{
     display: flex;
 }
-img{
-    height: 20vh;
-    width: 33vw;
-    object-fit: scale-down;
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
 }
+
 span{
     color: red;
 }
@@ -22,3 +23,21 @@ article{
     width: 30%;
     /* height: 20vh; */
 }
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
