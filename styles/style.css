@@ -8,10 +8,22 @@ header{
     height: 20vh;
     display: flex;
 }
-
+main{
+   /*  background-color: yellowgreen; */
+    width: 100%;
+}
+footer{
+    background-color: yellow;
+    height: 10vh;
+    width: 100vw;
+}
+body{
+    width: 100vw;
+    min-height: 100%;
+    /* background-color: blue; */
+}
 .dflex{
     display: flex;
-    flex-direction: column;
 }
 .column{
     flex-direction: column;
@@ -58,9 +70,58 @@ section{
     font-size: 3.5rem;
     }
 }
-/* index main */
+/* index main alicia pak */
 .main{
     display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.parrafo1{
+    font-size: 1.5rem;
+    border-radius: 1em;
+    border: 1px dashed yellow;
+    background-color: rgba(255, 255, 0, 0.144);
+}
+.parrafoIndex{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    background-color: yellow;
+    width: 580px;
+    height: 380px;
+    border-radius: 1em;
+    font-size: 1.5rem;
+    line-height: 150%;
+    padding: 10px;
+}
+.h2{
+    margin-bottom: 2em;
+    font-size: 3rem;
+}
+.principal{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.imgIndex{
+    border-radius: 1em;
+    border: 1px solid yellow;
+    width: 300px;
+    height: 400px;
+   object-fit: cover;
+}
+@media (max-width: 500px){
+    .parrafoIndex{
+        display: flex;
+        align-content: stretch;
+        line-height: 120%;
+    }
+}
+/* index main alicia pak */
 }
 
 
