@@ -24,8 +24,8 @@ article{
     /* height: 20vh; */
 }
 .btn-outline-success {
-    color: #ffffff;
-    border-color: #ffffff;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
 }
 
 .bd-placeholder-img {
