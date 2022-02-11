@@ -11,6 +11,7 @@ main{
     background-color: yellowgreen;
     min-height: 70vh;
     width: 100vw;
+    align-items: center;
 }
 footer{
     background-color: yellow;
@@ -22,6 +23,13 @@ footer{
 }
 .column{
     flex-direction: column;
+}
+h2{
+    display: inline;
+}
+form{
+    width: 400px;
+    justify-content: center;
 }
 img{
     height: 20vh;
