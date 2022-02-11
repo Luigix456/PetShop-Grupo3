@@ -9,15 +9,32 @@ nav {
     margin: 0;
     padding: 0;
 }
-
+header{
+    background-color: red;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+}
+main{
+   /*  background-color: yellowgreen; */
+    width: 100%;
+}
+footer{
+    background-color: yellow;
+    height: 10vh;
+    width: 100vw;
+}
+body{
+    width: 100vw;
+    min-height: 100%;
+    /* background-color: blue; */
+}
 .dflex{
     display: flex;
-    flex-direction: column;
 }
 .column{
     flex-direction: column;
 }
-
 .logo-header {
     width: 70px;
     height: 70px;
@@ -35,27 +52,24 @@ nav {
 }
 li a {
     margin-right: 3em;
+h2{
+    display: inline;
+}
+form{
+    width: 400px;
+    justify-content: center;
 }
 
-/*/////////////       ¡¡¡¡¡¡¡¡PROBLEMA CON SPAN!!!!!!!!!!         ///////////// */
 
-span{ 
-    color: red;
-    background: blue;
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
 }
-/*///////////////////////////////////////////////////// */
 section{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-}
-article{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    border: 2px solid rgb(37, 16, 16);
-    width: 30%;
-    /* height: 20vh; */
 }
 
 .bd-placeholder-img {
@@ -64,90 +78,109 @@ article{
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+    font-size: 3.5rem;
     }
-  }
-/* index main */
+}
+/* index main alicia pak */
 .main{
     display: flex;
     flex-grow: 1;
-    flex-grow: 2;
-    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.parrafo1{
+    font-size: 1.5rem;
+    border-radius: 1em;
+    border: 1px dashed yellow;
+    background-color: rgba(255, 255, 0, 0.144);
+}
+.parrafoIndex{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    background-color: yellow;
+    width: 580px;
+    height: 380px;
+    border-radius: 1em;
+    font-size: 1.5rem;
+    line-height: 150%;
+    padding: 10px;
+}
+.h2{
+    margin-bottom: 2em;
+    font-size: 3rem;
+}
+.principal{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.imgIndex{
+    border-radius: 1em;
+    border: 1px solid yellow;
+    width: 300px;
+    height: 400px;
+   object-fit: cover;
+}
+@media (max-width: 500px){
+    .parrafoIndex{
+        display: flex;
+        align-content: stretch;
+        line-height: 120%;
+    }
+}
+/* index main alicia pak */
+}
+
+
+/* ESTILO DE TARJETAS. NO BORRAR.  */
+
+.imgCartas{
+    height: 200px;
+    width: 200px;
+}
+
+.card-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    width: 260px;
+    height: 400px;
+    margin: 2rem 4rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 2em #0000004f;
+    border: #fdff71 0.2em solid;
+    transition: ease 0.5s;
+}
+.card-productos:hover {
+    transform: scale(1.02);
+}
+
+.contenedor-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-texto{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.parrafoIndex{
-    width: 30vw;
+.nombre-producto{
+    text-align: center;
+    margin: 0 1.5rem;
 }
-
-
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-/*                  SECCTION WILSON (FOOTER)                   */
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-.footerWilson{
-    background-color: yellow;
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(82, 4, 4, 0.589);
-    color: #fff;
-   
-}
-.footerWilson nav{
-    width: 20%;
-    /* background-color: red; */
-}
-.contenedorMapaHorarios{
-    display: flex;
-    width: 70%;
-    /* background-color: black */
-}
-.horarios{
-    width: 400px;
-    /* background-color: rgb(180, 132, 132) */;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    flex-wrap: wrap;
-}
-.mapa{
-    width: 300px;
-    height: auto;
-}
-.ubicacion{
-    height: 10vh;
-    width: 100%;
-
-}
-.footerWilson .logo{
-    width: 100%;
-   /*  background-color: red; */
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.logo a{
-    text-decoration: none;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    /* background-color: violet; */
-}
-.logo a img{
-    width: 100%;
-    height: 100%;
-}
-/* @media screen  {
-    
-} */
+/* FIN DE ESTILO DE TARJETAS. NO BORRAR */
