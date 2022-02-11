@@ -9,12 +9,6 @@ nav {
     margin: 0;
     padding: 0;
 }
-header{
-    background-color: red;
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-}
 
 .dflex{
     display: flex;
