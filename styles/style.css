@@ -32,8 +32,9 @@ footer div{
     display: flex;
 }
 .horarios{
-    display: flex;
-    flex-direction: column;
+    background-color: yellow;
+    height: 10vh;
+    width: 100vw;
 }
 .horarios div{
     flex-direction: row;
@@ -75,7 +76,7 @@ body{
 li a {
     margin-right: 3em;
 }
-h2 {
+h2{
     display: inline;
 }
 
@@ -253,7 +254,8 @@ h4 span{
     height: 150px;
     /* background-color: rgb(180, 132, 132) */;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     /* background-color: red; */
     flex-wrap: wrap;
@@ -276,7 +278,8 @@ h4 span{
     /* background-color: red; */
     height: 150px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .wilsonLogo a{
