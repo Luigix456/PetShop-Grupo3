@@ -25,7 +25,7 @@ function DisplayProducts(productos){
                 </div>
                 <div class='card-texto'>
                     <h3 class='nombre-producto'>${elemento.nombre}</h3>
-                    <h4><span>!Ultimas unidades¡</span></h4>
+                    <h4><span>¡Ultimas unidades!</span></h4>
                     <p class="price">Costo: $${elemento.precio},00</p>
                 </div>
             </article>
