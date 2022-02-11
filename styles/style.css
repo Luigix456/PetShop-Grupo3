@@ -28,11 +28,23 @@ body{
 .column{
     flex-direction: column;
 }
-img{
-    height: 20vh;
-    width: 33vw;
-    object-fit: scale-down;
+
+h2{
+    display: inline;
 }
+form{
+    width: 400px;
+    justify-content: center;
+}
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
+
+}
+
 span{
     color: red;
     background: blue;
@@ -42,13 +54,21 @@ section{
     width: 100%;
     flex-wrap: wrap;
 }
-article{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    border: 2px solid black;
-    width: 30%;
-    /* height: 20vh; */
+
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
 }
 /* index main alicia pak */
 .main{
@@ -102,3 +122,50 @@ article{
     }
 }
 /* index main alicia pak */
+}
+
+
+/* ESTILO DE TARJETAS. NO BORRAR.  */
+
+.imgCartas{
+    height: 200px;
+    width: 200px;
+}
+
+.card-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    width: 260px;
+    height: 400px;
+    margin: 2rem 4rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 2em #0000004f;
+    border: #fdff71 0.2em solid;
+    transition: ease 0.5s;
+}
+.card-productos:hover {
+    transform: scale(1.02);
+}
+
+.contenedor-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nombre-producto{
+    text-align: center;
+    margin: 0 1.5rem;
+}
+/* FIN DE ESTILO DE TARJETAS. NO BORRAR */
