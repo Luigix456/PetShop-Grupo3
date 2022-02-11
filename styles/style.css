@@ -8,11 +8,6 @@ header{
     height: 20vh;
     display: flex;
 }
-main{
-    background-color: yellowgreen;
-    min-height: 70vh;
-    width: 100vw;
-}
 
 .dflex{
     display: flex;
@@ -21,11 +16,12 @@ main{
 .column{
     flex-direction: column;
 }
-img{
-    height: 20vh;
-    width: 33vw;
-    object-fit: scale-down;
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
 }
+
 span{
     color: red;
     background: blue;
@@ -43,6 +39,22 @@ article{
     width: 30%;
     /* height: 20vh; */
 }
+
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
 /* index main */
 .main{
     display: flex;
@@ -100,7 +112,7 @@ article{
     width: 100%;
 
 }
-.logo{
+.footerWilson .logo{
     width: 100%;
    /*  background-color: red; */
     height: 100%;
