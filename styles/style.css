@@ -19,6 +19,7 @@ footer{
 }
 .dflex{
     display: flex;
+    flex-direction: column;
 }
 .column{
     flex-direction: column;
@@ -44,4 +45,9 @@ article{
     border: 2px solid black;
     width: 30%;
     /* height: 20vh; */
+}
+
+header{
+    background-color:aqua ;
+    display: flex;
 }
