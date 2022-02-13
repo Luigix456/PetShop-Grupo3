@@ -57,6 +57,7 @@ body{
 .column{
     flex-direction: column !important;
 }
+<<<<<<< HEAD
 .logo-header {
     width: 70px;
     height: 70px;
@@ -95,10 +96,31 @@ h2 {
     width: 400px;
     justify-content: center;
 }
+=======
+
+h2{
+    display: inline;
+}
+form{
+    width: 400px;
+    justify-content: center;
+}
+
+
+>>>>>>> 0da1ab6fdfb55b26b1f1c3222d47850773616773
 .logo {
     width: 100px;
     height: 100px;
     margin-right: 1em;
+<<<<<<< HEAD
+=======
+
+}
+
+span{
+    color: red;
+    background: blue;
+>>>>>>> 0da1ab6fdfb55b26b1f1c3222d47850773616773
 }
 section{
     display: flex;
@@ -106,6 +128,11 @@ section{
     flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0da1ab6fdfb55b26b1f1c3222d47850773616773
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -181,6 +208,12 @@ section{
     }
 }
 /* index main alicia pak */
+<<<<<<< HEAD
+=======
+}
+
+
+>>>>>>> 0da1ab6fdfb55b26b1f1c3222d47850773616773
 /* ESTILO DE TARJETAS. NO BORRAR.  */
 
 .imgCartas{
@@ -208,7 +241,10 @@ section{
 }
 
 .contenedor-cards{
+<<<<<<< HEAD
     margin-top: 86px;
+=======
+>>>>>>> 0da1ab6fdfb55b26b1f1c3222d47850773616773
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,12 +258,16 @@ section{
     align-items: center;
 }
 .nombre-producto{
+<<<<<<< HEAD
     font-size: large;
     font-weight: bolder;
+=======
+>>>>>>> 0da1ab6fdfb55b26b1f1c3222d47850773616773
     text-align: center;
     margin: 0 1.5rem;
 }
 /* FIN DE ESTILO DE TARJETAS. NO BORRAR */
+<<<<<<< HEAD
 h4 span{
     color: red;
     font-size: medium;
@@ -341,3 +381,5 @@ h4 span{
     
    
 }
+=======
+>>>>>>> 0da1ab6fdfb55b26b1f1c3222d47850773616773
