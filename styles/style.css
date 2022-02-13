@@ -1,11 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+nav {
+    font-family: 'Fredoka One', cursive;
+}
+nav a img{
+    height: 50px;
+    width: 50px;
+}
 *{
     margin: 0;
     padding: 0;
 }
 header{
-    background-color: red;
-    width: 100vw;
-    height: 20vh;
+    /* width: 100vw;
+    height: 20vh; */
     display: flex;
 }
 main{
@@ -13,42 +22,102 @@ main{
     width: 100%;
 }
 footer{
+    display: flex;
     background-color: yellow;
-    height: 10vh;
-    width: 100vw;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+footer div{
+    display: flex;
+}
+.horarios{
+    display: flex;
+    flex-direction: column;
+}
+.horarios div{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.horarios2{
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    margin-left: 3em;
+    padding-top: 1em;
 }
 body{
-    width: 100vw;
+    width: 100%;
     min-height: 100%;
     /* background-color: blue; */
 }
 .dflex{
-    display: flex;
+    display: flex !important;
 }
 .column{
-    flex-direction: column;
+    flex-direction: column !important;
 }
-img{
-    height: 20vh;
-    width: 33vw;
-    object-fit: scale-down;
+.logo-header {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
-span{
-    color: red;
-    background: blue;
+.text-logo a {
+    font-size: 2em;
+}
+.text-logo {
+    margin-right: 2em;
+    transition: all .2s 0s ease;
+}
+.text-logo:hover {
+    transform: scale(1.05,1.05);
+}
+li a {
+    margin-right: 3em;
+}
+h2 {
+    display: inline;
+}
+
+.contenedorForms{
+    margin-top: 86px;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+.formMapa{
+    margin-top: 2em;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+.formularioContacto{
+    margin-top: 86px;
+    width: 400px;
+    justify-content: center;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
 }
 section{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 }
-article{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    border: 2px solid black;
-    width: 30%;
-    /* height: 20vh; */
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
 }
 /* index main alicia pak */
 .main{
@@ -60,45 +129,215 @@ article{
 }
 .parrafo1{
     font-size: 1.5rem;
-    border-radius: 1em;
     border: 1px dashed yellow;
     background-color: rgba(255, 255, 0, 0.144);
+    display: flex;
+    flex-wrap: wrap;
 }
 .parrafoIndex{
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: justify;
-    background-color: yellow;
-    width: 580px;
-    height: 380px;
-    border-radius: 1em;
-    font-size: 1.5rem;
-    line-height: 150%;
-    padding: 10px;
+    font-size: 1.1rem;
 }
 .h2{
-    margin-bottom: 2em;
+    background-image: url(/assets/perro.jpg);
+    background-size: cover;
+    background-position: 40% 40%;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 1em;
     font-size: 3rem;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
 }
 .principal{
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
 }
+
 .imgIndex{
-    border-radius: 1em;
     border: 1px solid yellow;
-    width: 300px;
-    height: 400px;
-   object-fit: cover;
+    width: 400px !important;
+    height: 425px !important;
+   object-fit: cover !important;
 }
-@media (max-width: 500px){
-    .parrafoIndex{
-        display: flex;
-        align-content: stretch;
-        line-height: 120%;
+.fondoCard{
+    background-color: rgba(255, 255, 0, 0.144);
+}
+.card2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media (min-width: 765px) and (max-width: 990px){
+    .imgIndex{
+        object-fit: cover !important;
+        height: 550px !important;
     }
 }
 /* index main alicia pak */
+/* ESTILO DE TARJETAS. NO BORRAR.  */
+
+.imgCartas{
+    height: 200px;
+    width: 200px;
+}
+
+.card-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    width: 260px;
+    height: 400px;
+    margin: 2rem 4rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 2em #0000004f;
+    border: #fdff71 0.2em solid;
+    transition: ease 0.5s;
+}
+.card-productos:hover {
+    transform: scale(1.02);
+}
+
+.contenedor-cards{
+    margin-top: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nombre-producto{
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 1.5rem;
+}
+/* FIN DE ESTILO DE TARJETAS. NO BORRAR */
+h4 span{
+    color: red;
+    font-size: medium;
+    font-weight: bolder;
+}
+.noshow{
+    display: none;
+}
+.footerWilson{
+    /* height: 200px; */
+    height: auto;
+    width: 100%;
+    background-color: rgba(27, 24, 24, 0.822);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+.footerWilson nav{
+    width: 300px;
+    /* background-color: red; */
+}
+
+.wilsonHorarios{
+    width: 500px;
+    height: 150px;
+    /* background-color: rgb(180, 132, 132) */;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    flex-wrap: wrap;
+}
+.wilsonHorarios div{
+   /*  background-color: green; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.wilsonMapa{
+    width: 250px;
+    height: 190px;
+}
+
+
+.wilsonLogo{
+    width: 300px;
+    /* background-color: red; */
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.wilsonLogo a{
+    text-decoration: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    /* background-color: violet; */
+}
+.wilsonLogo a img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:700px) {
+    .footerWilson{
+        background-color: red;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+    
+   
+}
+@media screen and (max-width:600px) {
+    .footerWilson{
+        background-color: red;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+    .wilsonHorarios{
+        width: 350px;
+        background-color: violet;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-bottom: 20px;
+
+    }
+    
+   
+}
+@media screen and (max-width:400px) {
+    
+    .wilsonHorarios{
+        width: 100%;
+        background-color: violet;
+        display: flex;
+        font-size: 14px;
+        margin-bottom: 20px;
+        flex-direction: column;
+
+    }
+    
+   
+}
