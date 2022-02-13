@@ -1,5 +1,5 @@
 function confirmacion(){
-    alert("Formulario enviado, te estaremos contactando a la brevedad.");
+    alert("Formulario enviado, te estaremos contactando a la brevedad. ¡Muchas gracias por escribirnos!");
 }
 
-document.getElementById("formularioContacto").addEventListener("submit", confirmacion);
+document.getElementById("btnSubmit").addEventListener("click", confirmacion);
