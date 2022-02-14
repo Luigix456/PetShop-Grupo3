@@ -61,8 +61,6 @@ body{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-h2 {
-    display: inline;
 }
 .text-logo a {
     font-size: 2em;
@@ -89,7 +87,6 @@ li a {
 #formularioContacto{
     width: 500px;
     height: 500px;
-
 }
 .logo {
     width: 100px;
@@ -125,74 +122,46 @@ section{
 }
 .parrafo1{
     font-size: 1.5rem;
+    border-radius: 1em;
     border: 1px dashed yellow;
     background-color: rgba(255, 255, 0, 0.144);
-    display: flex;
-    flex-wrap: wrap;
 }
 .parrafoIndex{
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: justify;
-    font-size: 1.1rem;
+    background-color: yellow;
+    width: 580px;
+    height: 380px;
+    border-radius: 1em;
+    font-size: 1.5rem;
+    line-height: 150%;
+    padding: 10px;
 }
 .h2{
-    background-image: url(/assets/perro.jpg);
-    background-size: cover;
-    background-position: 40% 40%;
-    width: 100%;
     margin-top: 100px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     font-size: 3rem;
-    padding: 1em;
-    display: flex;
-    flex-wrap: wrap;
 }
 .principal{
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
 }
-
 .imgIndex{
+    border-radius: 1em;
     border: 1px solid yellow;
-    width: 400px !important;
-    height: 425px !important;
-   object-fit: cover !important;
+    width: 300px;
+    height: 400px;
+   object-fit: cover;
 }
-.fondoCard{
-    background-color: rgba(255, 255, 0, 0.144);
-}
-.card2{
-    display: flex;
-    flex-direction: row-reverse;
-}
-.cardsIndex{
-    border: 2px solid yellow;
-}
-@media (min-width: 765px) and (max-width: 990px){
-    .imgIndex{
-        object-fit: cover !important;
-        height: 550px !important;
-    }
-}
-@media (max-width: 767px) and (min-width: 403px){
-    .cardsIndex{
-        border: none;
-    }
-    .imgMedia{
+@media (max-width: 500px){
+    .parrafoIndex{
         display: flex;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 1000px){
-    .h2{
-        text-align: left;
-        padding-left: 0;
+        align-content: stretch;
+        line-height: 120%;
     }
 }
 /* index main alicia pak */
@@ -354,7 +323,7 @@ h4 span{
 
     }
     
-
+   
 }
 /* Inicio modificaciones Martín */
 .spaceAround{
@@ -394,4 +363,3 @@ h4 span{
     }
 }
 /*Fin modificaciones Martín*/
-
