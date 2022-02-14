@@ -47,8 +47,27 @@ footer div{
 }
 .horarios{
     background-color: yellow;
-    height: 10vh;
-    width: 100vw;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+footer div{
+    display: flex;
+}
+.horarios{
+    display: flex;
+    flex-direction: column;
+}
+.horarios div{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.horarios2{
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    margin-left: 3em;
+    padding-top: 1em;
 }
 .horarios div{
     flex-direction: row;
@@ -90,17 +109,22 @@ body{
 li a {
     margin-right: 3em;
 }
-.h2{
+h2{
     display: inline;
 }
-form{
-    width: 400px;
-    justify-content: center;
-}
-/* h2{
-    display: inline;
+/* .contenedorForms{
+    margin-top: 86px;
+    justify-content: space-around;
+    margin-bottom: 2em;
 } */
-
+.formMapa{
+    width: 500px;
+    height: 500px;
+}
+#formularioContacto{
+    width: 500px;
+    height: 500px;
+}
 .contenedorForms{
     margin-top: 86px;
     justify-content: space-around;
@@ -155,65 +179,74 @@ main{
     padding: 1em;
     text-align: center;
     font-size: 1.5rem;
-    border-radius: 1em;
     border: 1px dashed yellow;
     background-color: rgba(255, 255, 0, 0.144);
+    display: flex;
+    flex-wrap: wrap;
 }
 .parrafoIndex{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    width: 580px;
-    height: 380px;
-    border-radius: 1em;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(61, 61, 61);
-    line-height: 150%;
-    padding: 10px;
+    text-align: justify;
+    font-size: 1.1rem;
+
 }
-.parrafoIndex h2 {
-    text-align: center;
-    background-color: #0d6efd;
-    color: #FFF;
-    font-weight: bold;
-    padding: .5em;
-    border-radius: 25px;
-    box-shadow: 1px 1px 10px 0 rgb(51, 51, 51);
-    margin: auto;
-    margin-bottom: 1em;
-}
-.parrafoIndex p {
-    background-color: rgb(255, 255, 102);
-    padding: 1em 2em;
-    border-radius: 25px;
-    box-shadow: 1px 1px 10px 0 rgb(51, 51, 51);
-}
-.h2 {
-    text-align: center;
+.h2{
+    background-image: url(/assets/perro.jpg);
+    background-size: cover;
+    background-position: 40% 40%;
+    width: 100%;
     margin-top: 100px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     font-size: 3rem;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
 }
 .principal{
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
 }
 
 .imgIndex{
-    border-radius: 1em;
     border: 1px solid yellow;
-    object-fit: cover;
-    box-shadow: 1px 1px 10px 0 rgb(51, 51, 51);
+    width: 400px !important;
+    height: 425px !important;
+    object-fit: cover !important;
 }
-@media (max-width: 500px){
-    .parrafoIndex{
+.fondoCard{
+    background-color: rgba(255, 255, 0, 0.144);
+}
+.card2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.cardsIndex{
+    border: 2px solid yellow;
+}
+@media (min-width: 765px) and (max-width: 990px){
+    .imgIndex{
+        object-fit: cover !important;
+        height: 550px !important;
+    }
+}
+@media (max-width: 767px) and (min-width: 403px){
+    .cardsIndex{
+        border: none;
+    }
+    .imgMedia{
         display: flex;
-        align-content: stretch;
-        line-height: 120%;
+        justify-content: center;
+    }
+}
+@media (max-width: 1000px){
+    .h2{
+        text-align: left;
+        padding-left: 0;
     }
 }
 /* index main alicia pak */
@@ -287,6 +320,7 @@ h4 span{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 2em;
+
 }
 .footerWilson nav{
     width: 300px;
@@ -316,8 +350,6 @@ h4 span{
     height: 190px;
     box-shadow: 1px 1px 15px 0 black;
 }
-
-
 .wilsonLogo{
     width: 300px;
     /* background-color: red; */
@@ -385,6 +417,43 @@ h4 span{
         margin-bottom: 20px;
         flex-direction: column;
 
-    }
-   
+    }  
 }
+/* Inicio modificaciones Martín */
+.spaceAround{
+    justify-content: space-around !important;
+}
+.spaceBetween{
+    justify-content: space-between !important;
+}
+.formYmap{
+    margin-top: 86px;
+}
+.divFormulario{
+    width: 500px;
+}
+.divMapa{
+    width: 500px;
+}
+.divFormulario h2, .divMapa h2{
+    text-align: center;
+}
+#name, #last, #handy, #pet, #comentarios{
+    background-color: rgb(202, 202, 202);
+}
+@media screen and (max-width:1000px) {
+    .formYmap{
+        margin-top: 86px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formMapa{
+        width: 400px;
+        height: 400px;
+    }
+    #formularioContacto{
+        width: 400px;
+        height: 400px;
+    }
+}
+/*Fin modificaciones Martín*/
