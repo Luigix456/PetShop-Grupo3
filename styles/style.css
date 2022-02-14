@@ -4,20 +4,74 @@
 nav {
     font-family: 'Fredoka One', cursive;
 }
-
+nav a img{
+    height: 50px;
+    width: 50px;
+}
 *{
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: rgb(243, 243, 243);
+}
+header{
+    /* width: 100vw;
+    height: 20vh; */
+    display: flex;
+}
+.carousel-container {
+    background-color:rgb(243, 243, 243);
+    margin-top: 86px;
+    width: 100%;
+}
+.carousel-item {
+    height: 42rem;
+    background-position: center;
+    background-size: cover;
+}
+/* .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    } */
 
-.dflex{
+footer{
+    display: flex;
+    background-color: yellow;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+footer div{
+    display: flex;
+}
+.horarios{
+    background-color: yellow;
+    height: 10vh;
+    width: 100vw;
+}
+.horarios div{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.horarios2{
     display: flex;
     flex-direction: column;
+    background-color: wheat;
+    margin-left: 3em;
+    padding-top: 1em;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    /* background-color: blue; */
+}
+.dflex{
+    display: flex !important;
 }
 .column{
-    flex-direction: column;
+    flex-direction: column !important;
 }
-
 .logo-header {
     width: 70px;
     height: 70px;
@@ -36,26 +90,35 @@ nav {
 li a {
     margin-right: 3em;
 }
+/* h2{
+    display: inline;
+} */
 
-/*/////////////       ¡¡¡¡¡¡¡¡PROBLEMA CON SPAN!!!!!!!!!!         ///////////// */
-
-span{ 
-    color: red;
-    background: blue;
+.contenedorForms{
+    margin-top: 86px;
+    justify-content: space-around;
+    margin-bottom: 2em;
 }
-/*///////////////////////////////////////////////////// */
+.formMapa{
+    margin-top: 2em;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+.formularioContacto{
+    margin-top: 86px;
+    width: 400px;
+    justify-content: center;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
+}
 section{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-}
-article{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    border: 2px solid rgb(37, 16, 16);
-    width: 30%;
-    /* height: 20vh; */
 }
 
 .bd-placeholder-img {
@@ -64,90 +127,257 @@ article{
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+    font-size: 3.5rem;
     }
-  }
-/* index main */
-.main{
+}
+/* index main alicia pak */
+main{
+    width: 100%;
     display: flex;
     flex-grow: 1;
-    flex-grow: 2;
-    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10em;
+}
+.parrafo1{
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 1em;
+    border: 1px dashed yellow;
+    background-color: rgba(255, 255, 0, 0.144);
+}
+.parrafoIndex{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 580px;
+    height: 380px;
+    border-radius: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    line-height: 150%;
+    padding: 10px;
+}
+.parrafoIndex h2 {
+    text-align: center;
+    background-color: #0d6efd;
+    color: #FFF;
+    font-weight: bold;
+    padding: .5em;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px 0 rgb(51, 51, 51);
+    margin: auto;
+    margin-bottom: 1em;
+}
+.parrafoIndex p {
+    background-color: rgb(255, 255, 102);
+    padding: 1em 2em;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px 0 rgb(51, 51, 51);
+}
+.h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 2em;
+    font-size: 3rem;
+}
+.principal{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.imgIndex{
+    border-radius: 1em;
+    border: 1px solid yellow;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px 0 rgb(51, 51, 51);
+}
+@media (max-width: 500px){
+    .parrafoIndex{
+        display: flex;
+        align-content: stretch;
+        line-height: 120%;
+    }
+}
+/* index main alicia pak */
+/* ESTILO DE TARJETAS. NO BORRAR.  */
+
+.imgCartas{
+    height: 200px;
+    width: 200px;
+}
+
+.card-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    width: 260px;
+    height: 400px;
+    margin: 2rem 4rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 2em #0000004f;
+    border: #fdff71 0.2em solid;
+    transition: ease 0.5s;
+}
+.card-productos:hover {
+    transform: scale(1.02);
+}
+
+.contenedor-cards{
+    margin-top: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-texto{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.parrafoIndex{
-    width: 30vw;
+.nombre-producto{
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 1.5rem;
 }
-
-
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-/*                  SECCTION WILSON (FOOTER)                   */
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* FIN DE ESTILO DE TARJETAS. NO BORRAR */
+h4 span{
+    color: red;
+    font-size: medium;
+    font-weight: bolder;
+}
+.noshow{
+    display: none;
+}
 .footerWilson{
-    background-color: yellow;
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(82, 4, 4, 0.589);
+    /* height: 200px; */
+    height: auto;
+    width: 100%;
+    background-color:#0d6efd;
     color: #fff;
-   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2em;
 }
 .footerWilson nav{
-    width: 20%;
+    width: 300px;
     /* background-color: red; */
 }
-.contenedorMapaHorarios{
-    display: flex;
-    width: 70%;
-    /* background-color: black */
-}
-.horarios{
-    width: 400px;
+
+.wilsonHorarios{
+    width: 500px;
+    height: 150px;
     /* background-color: rgb(180, 132, 132) */;
-    
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    flex-wrap: wrap;
-}
-.mapa{
-    width: 300px;
-    height: auto;
-}
-.ubicacion{
-    height: 10vh;
-    width: 100%;
-
-}
-.footerWilson .logo{
-    width: 100%;
-   /*  background-color: red; */
-    height: 100%;
-    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    /* background-color: red; */
+    flex-wrap: wrap;
 }
-.logo a{
+.wilsonHorarios div{
+   /*  background-color: green; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.wilsonMapa{
+    width: 250px;
+    height: 190px;
+    box-shadow: 1px 1px 15px 0 black;
+}
+
+
+.wilsonLogo{
+    width: 300px;
+    /* background-color: red; */
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.wilsonLogo a{
     text-decoration: none;
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
     /* background-color: violet; */
 }
-.logo a img{
+.wilsonLogo a img{
     width: 100%;
     height: 100%;
 }
-/* @media screen  {
+.horarios-div {
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    background-color: rgb(255, 255, 102);
+    padding: 2em;
+    box-shadow: 1px 1px 15px 0 rgb(51, 51, 51);
+    border-radius: 25px;
+    color: #000;
+    font-weight: bolder;
+}
+@media screen and (max-width:700px) {
+    .footerWilson{
+        background-color: red;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .footerWilson{
+        background-color: red;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+    .wilsonHorarios{
+        width: 350px;
+        background-color: violet;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-bottom: 20px;
+
+    }
     
-} */
+   
+}
+@media screen and (max-width:400px) {
+    
+    .wilsonHorarios{
+        width: 100%;
+        background-color: violet;
+        display: flex;
+        font-size: 14px;
+        margin-bottom: 20px;
+        flex-direction: column;
+
+    }
+   
+}
