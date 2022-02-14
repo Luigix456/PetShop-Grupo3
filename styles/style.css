@@ -90,6 +90,13 @@ body{
 li a {
     margin-right: 3em;
 }
+.h2{
+    display: inline;
+}
+form{
+    width: 400px;
+    justify-content: center;
+}
 /* h2{
     display: inline;
 } */
