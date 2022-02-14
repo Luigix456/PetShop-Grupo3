@@ -48,32 +48,35 @@
         </div>
       </nav>
   </header>
-    <main class="dflex column">
-      <div class="contenedorForms dflex">
-        <form id="formularioContacto" class="dflex column" action="">
-          <h2 class="h2contactos">Dejanos tu consulta o comentario:</h2>
-            <label for="name">Nombre:</label>
-            <input id="name" name="firstName" type="text" required>
-            <label for="last">Apellido:</label>
-            <input id="last" name="lastName" type="text">
-            <label for="handy">Telefono:</label>
-            <input id="handy" name="phone" type="tel" required>
-            <label for="pet">Tipo de mascota:</label>
-            <select name="mascota" id="pet" required != "0">
-                <option value="0">Seleccione mascota</option>
-                <option value="dog">Perro</option>
-                <option value="cat">Gato</option>
-                <option value="other">Otro</option>
-            </select>
-            <label for="comentarios">Consulta o comentarios:</label>
-            <textarea name="comments" id="comentarios" cols="30" rows="10"></textarea>
-            <input id="btnSubmit" type="submit">
+  <main class="dflex column">
+    <div class="dflex spaceAround formYmap">
+      <div class="dflex column divFormulario">
+        <h2>Dejanos tu consulta o comentario:</h2>
+        <form id="formularioContacto" class="dflex column spaceBetween" action="">
+          <label for="name">Nombre:</label>
+          <input id="name" name="firstName" type="text" required>
+          <label for="last">Apellido:</label>
+          <input id="last" name="lastName" type="text">
+          <label for="handy">Telefono:</label>
+          <input id="handy" name="phone" type="tel" required>
+          <label for="pet">Tipo de mascota:</label>
+          <select name="mascota" id="pet" required != "0">
+            <option value="0">Seleccione mascota</option>
+            <option value="dog">Perro</option>
+            <option value="cat">Gato</option>
+            <option value="other">Otro</option>
+          </select>
+          <label for="comentarios">Consulta o comentarios:</label>
+          <textarea name="comments" id="comentarios" cols="30" rows="10"></textarea>
+          <input id="btnSubmit" type="submit">
         </form>
-        <div>
-          <iframe class="formMapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5850.914962856049!2d-58.425239468594604!3d-34.6113665444849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405CCB%20CABA!5e0!3m2!1ses!2sar!4v1644586939042!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
       </div>
-    </main>
+      <div class="dfles column divMapa">
+        <h2>Te invitamos a conocernos:</h2>
+        <iframe class="formMapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5850.914962856049!2d-58.425239468594604!3d-34.6113665444849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405CCB%20CABA!5e0!3m2!1ses!2sar!4v1644586939042!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </main>
     <footer class="footerWilson">
       <div class="contenedorMapaHorarios">
           <div class="wilsonHorarios">

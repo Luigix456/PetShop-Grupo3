@@ -75,25 +75,18 @@ body{
 li a {
     margin-right: 3em;
 }
-h2 {
-    display: inline;
-}
-
-.contenedorForms{
+/* .contenedorForms{
     margin-top: 86px;
     justify-content: space-around;
     margin-bottom: 2em;
-}
+} */
 .formMapa{
-    margin-top: 2em;
     width: 500px;
     height: 500px;
-    border: 1px solid black;
 }
-.formularioContacto{
-    margin-top: 86px;
-    width: 400px;
-    justify-content: center;
+#formularioContacto{
+    width: 500px;
+    height: 500px;
 }
 .logo {
     width: 100px;
@@ -332,3 +325,41 @@ h4 span{
     
    
 }
+/* Inicio modificaciones Martín */
+.spaceAround{
+    justify-content: space-around !important;
+}
+.spaceBetween{
+    justify-content: space-between !important;
+}
+.formYmap{
+    margin-top: 86px;
+}
+.divFormulario{
+    width: 500px;
+}
+.divMapa{
+    width: 500px;
+}
+.divFormulario h2, .divMapa h2{
+    text-align: center;
+}
+#name, #last, #handy, #pet, #comentarios{
+    background-color: rgb(202, 202, 202);
+}
+@media screen and (max-width:1000px) {
+    .formYmap{
+        margin-top: 86px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formMapa{
+        width: 400px;
+        height: 400px;
+    }
+    #formularioContacto{
+        width: 400px;
+        height: 400px;
+    }
+}
+/*Fin modificaciones Martín*/
