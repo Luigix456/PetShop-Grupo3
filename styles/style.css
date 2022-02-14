@@ -125,11 +125,11 @@ h2{
     width: 500px;
     height: 500px;
 }
-.contenedorForms{
+/* .contenedorForms{
     margin-top: 86px;
     justify-content: space-around;
     margin-bottom: 2em;
-}
+} */
 .formMapa{
     margin-top: 2em;
     width: 500px;
@@ -174,6 +174,11 @@ main{
     align-items: center;
     flex-direction: column;
     margin-bottom: 10em;
+}
+.formYmap {
+    margin-top: 200px !important;
+    width: 100%;
+    justify-content: space-evenly;
 }
 .parrafo1{
     padding: 1em;
@@ -320,7 +325,6 @@ h4 span{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 2em;
-
 }
 .footerWilson nav{
     width: 300px;
@@ -430,16 +434,55 @@ h4 span{
     margin-top: 86px;
 }
 .divFormulario{
-    width: 500px;
+    width: auto;
+    border: 10px solid rgb(255, 230, 0);
+    padding: 20px;
+    box-shadow: 0px 1px 10px 0 #000;
+    height: auto;
+}
+.divFormulario h2 {
+    background-color: rgb(255, 238, 88);
+    padding: .5em;
+    border-radius: 25px;
+    box-shadow: 0px 1px 10px 0 #000;
+}
+form input {
+    background-color: #67a4ff;
+    font-weight: bolder;
+
+}
+textarea {
+    resize: none;
+  }
+label {
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+label , input {
+    margin-top: 1em;
 }
 .divMapa{
-    width: 500px;
+    width: 800px;
+    box-shadow: 0px 1px 10px 0 #000;
 }
-.divFormulario h2, .divMapa h2{
-    text-align: center;
+.divMapa h2 {
+    padding: .5em;
+    width: 60%;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgb(255, 238, 88);
+    box-shadow: 1px 0px 10px 0 #000;
+}
+.divMapa iframe{
+    width: 800px;
 }
 #name, #last, #handy, #pet, #comentarios{
-    background-color: rgb(202, 202, 202);
+    background-color: #a0c6ff;
 }
 @media screen and (max-width:1000px) {
     .formYmap{
